@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>chldydgh4687/github.io</title>
+        <style>
+            /*background / menu / logo */
+            /*---------background--------*/
+            body{
+                background-image: url('../images/main.png');
+                background-size: 1800px;
+                background-repeat: no-repeat;
+                background-attachment: scroll;
+            }
+            
+            /*-----------logo------------*/
+            .logo-wrap {
+				width: 700px;
+				margin-left:20px;
+                margin-top: 15px;
+                position: relative;
+			}
+			.logo-wrap img {
+                /*img size adjusting in wrap tag*/
+				width: 70%;
+			}
+			.logo-text {
+                font-family: "Microsoft YaHei UI Light",Trebuchet MS, Dotum, Arial; 
+                text-align: left;
+                position: absolute;
+                top: 50%;
+                left: 30%;
+                transform: translate( -15%, -55% );
+            }
+
+            /*---------------menu------------*/
+            #topMenu {
+                position: absolute;
+                width: 1600px; 
+                top: 80%;
+            }
+            #topMenu ul li {                      
+                list-style: none;          
+                color: black;               
+                float: right;               
+                line-height: 30px;          
+                vertical-align: middle;    
+                text-align: center;        
+            }
+            #topMenu .menuLink {                               
+                text-decoration:none;                    
+                color: black;                         
+                display: inline-block;                           
+                width: 150px;                           
+                font-size: 20px;                   
+                font-weight: bold;                        
+                font-family: "Microsoft YaHei UI Light",Trebuchet MS, Dotum, Arial; 
+            }
+            #topMenu .menuLink:hover {           
+                color: gray;                   
+            }
+            .box_check{
+                border: 1px solid #000000;
+            }
+        </style>
+
+        <!-----------------------------------context----------------------------->
+        <link rel="stylesheet" href="../css/context.css">
+        <!-----------------------------------footer----------------------------->
+        <link rel="stylesheet" href="../css/footer_style.css">
+    </head>
+    <body>
+        <!------------------------logo-------------------------->
+        <div class="logo-wrap">
+            <img src="../images/logo.png" alt="" usemap="#github">
+            <map name="github">
+                <area shape="rect" coords="455,55,475,75"
+                href="https://github.com/chldydgh4687" target="_blank" alt="github.com/chldydgh4687">
+            </map>
+			<div class="logo-text">
+                <h1 style="font-size:2em">chldydgh4687<br>
+                    <span style="font-size:15px">VideoCompression & ImageRestoration</span>
+                </h1>
+            </div>
+            <nav id="topMenu">
+                <ul>
+                    <li><a class="menuLink" href="../layouts/Activity.html">Activity</a></li>
+                    <li><a class="menuLink" href="../layouts/Introduction.html">Introduction</a></li>
+                    <li><a class="menuLink" href="../index.html">Main</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <h1 class="text_config" style="height: 500px;">This is Acitivity Page.</h1>
+        
+        <div class="footer_context">
+            <hr>
+            <p class="made_by">Assginment by "WebProgramming" of Sejong University, Intelligent Mechatronics Of School<br>
+                @ Designed by Yongho_Choi, chldydgh4687@gmail.com</p>
+        </div>
+    </body>
+</html>
+

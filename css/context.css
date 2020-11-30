@@ -1,0 +1,21 @@
+.text_config{
+    font-family: "HY중고딕";
+    font-size: 15px;
+    margin-left: 200px;
+    margin-top: 80px;
+    line-height: 1.5em;
+}
+.checklist_{
+    list-style-type: disc;
+    list-style-position: inside; /* 리스트의 불릿을 문단 안으로 정렬시킴*/
+    width:1500px;
+}
+.context_list{    
+    
+}
+ol{
+    margin-bottom: 20px;
+}
+h1{
+    font-size: 32px;
+}
