@@ -6,16 +6,37 @@
     line-height: 1.5em;
 }
 .checklist_{
+    clear:both; /*float에 의해 딸려올라가는 글을 방지*/
     list-style-type: disc;
     list-style-position: inside; /* 리스트의 불릿을 문단 안으로 정렬시킴*/
     width:1500px;
 }
-.context_list{    
-    
+.site_intro{
+    width:850px;
+    float:left;
 }
-ol{
-    margin-bottom: 20px;
+.site_intro_pic{
+    float:left;
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+.site_intro_text{
+    margin-top: 150px;
+    width:700px;
+}
+.site_intro_text li{
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.checklist_ ol li{
+    margin-bottom: 15px;
 }
 h1{
     font-size: 32px;
+}
+pre{
+    font-size:15px;
+    font-family: "HY중고딕";
+    line-height: 1.5em;
 }

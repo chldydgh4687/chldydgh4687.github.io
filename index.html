@@ -57,7 +57,8 @@
             }
             #topMenu .menuLink:hover {           
                 color: gray;                   
-            }
+            } 
+
             .box_check{
                 border: 1px solid #000000;
             }
@@ -90,11 +91,60 @@
             </nav>
         </div>
         
+        <!------------------------소개글-------------------------->
+        <div class="text_config site_intro">
+            <h1><strong>웹 프로그래밍 '홈페이지 작성' - '프로필 홈페이지'</strong></h1>
+            <hr style = "width:1500px;">
+            <div class=" site_intro_pic" style="margin-right: 20px;">
+                <img src = "./images/profile_ex.PNG" width = 400px; height = 200px; border="1";>
+            </div>
+            <div class=" site_intro_pic" style="margin-right: 20px;">
+                <img src = "./images/profile_ex1.PNG" width = 400px; height = 200px; border="1";>
+            </div>
+            <img src = "./images/github.PNG" width = 820px; height = 700px; border="1" style="margin-bottom:50px;";>
+        </div>
+
+        <div class="site_intro_text" style="float:left;">
+            <pre style="font-size:20px"><strong>본 과제에서 저는 '깃허브 프로필 홈페이지' 제작을 진행해보았습니다.</strong></pre>
+            <ul>
+                <li>제작 기간 : <input type="text" size="10" value="11 / 30 ~ 12 / 5" readonly> </li>
+                <li>+ a 기능 : Activity 메뉴 / gitpages 런칭 및 'Develop' 브런치 관리 / Top 버튼 제작 </li>
+                <li>홈페이지 주소 : <a href="https://chldydgh4687.github.io">https://chldydgh4687.github.io</a>
+                <li>깃 레포지토리 : <a href="https://github.com/chldydgh4687/chldydgh4687.github.io" target="_blank">[Git repository]</a></li>
+            </ul>
+
+            <pre style="font-size:20px; margin-top:50px;"><strong>홈페이지 구성</strong></pre>
+            <ul>
+                <li>Main : 홈페이지 기능 소개 </li>
+                <li>Introduction : 소개글 및 가치관, 신념 </li>
+                <li>Activity : 이력 및 깃허브 활동 </li>
+            </ul> 
+        </div>
+            
+        <!-- <div class=".site_intro_pic site_intro_text box_check">
+            <pre style="font-size:20px"><strong>본 과제에서 저는 '깃허브 프로필 홈페이지' 제작을 진행해보았습니다.</strong></pre>
+            <ul>
+                <li>제작 기간 : <input type="text" size="10" value="11 / 30 ~ 12 / 5" readonly> </li>
+                <li>+ a 기능 : Activity 메뉴 / gitpages 런칭 및 'Develop' 브런치 관리 / Top 버튼 제작 </li>
+                <li>홈페이지 주소 : <a href="https://chldydgh4687.github.io">https://chldydgh4687.github.io</a>
+                <li>깃 레포지토리 : <a href="https://github.com/chldydgh4687/chldydgh4687.github.io" target="_blank">[Git repository]</a></li>
+            </ul>
+            
+
+            <pre style="font-size:20px; margin-top:50px;"><strong>홈페이지 구성</strong></pre>
+            <ul>
+                <li>Main : 홈페이지 기능 소개 </li>
+                <li>Introduction : 소개글 및 가치관, 신념 </li>
+                <li>Activity : 이력 및 깃허브 활동 </li>
+            </ul>
+            
+        </div> -->
+        <!------------------------과제리스트-------------------------->
         <div class="checklist_ text_config">
             <h1><strong>웹 프로그래밍 '홈페이지 작성' 과제 체크리스트</strong></h1>
             <hr>
-            <p>본 과제에서 주차에 있는 내용을 모두 적용하려했으며, 프로필 사이트 제작을 해보았습니다.</p>
-            <ul class="context_list">
+            <p>형광펜은 쓰인 부분을 의미합니다. ( 개념 제외 )</p>
+            <ul>
                 <li>1주차(개념) </li>
                 <ol>
                     <li>Html 무엇인가</li>
@@ -127,49 +177,89 @@
                     <li>img 이미지 태그 / src 경로 속성 / width, height : 이미지크기 조정 속성</li>
                     <li>figure figcaption : 이미지에 설명글 붙이기 (figure 안에 img 태그하고 img 위 figcaption img 아래 figcaption이 다름)</li>
                 </ol>
-                <li>5주차 </li>
+                <li>5주차</li>
                 <ol>
-                    <li>내용 없음</li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>a 하이퍼링크태그 - target 속성 : 링크를 새 탭에서 열기</li>
+                    <li>한 페이지 안에서 점프하기 - 앵커 id와 #을 이용하여 표현</li>
+                    <li>area 태그, usemap 속성( 사용자가 웹 사이트로 정보를 보낼 수 있는 요소 : 폼 )</li>
+                </ol>
+                <li>6주차</li>
+                <ol>
+                    <li>input 태그 / type / user-name / size </li>
+                </ol>
+                <li>7주차</li>
+                <ol>
+                    <li> input에 대한 다양한 폼 / CSS 기초 버튼 /  퍼센트 그래프 표현 </li>
+                    <li> 내부 스타일 : 모든 스타일 정보는 head 안에 정의 style 사이에 작성 </li>
+                    <li> 외부 스타일 : css 파일로 저장하여 link태그를 이용하여 사용, style.css / link rel="stylesheet" href="css/style.css" </li>
+                    <li> 직접적으로 인라인으로 표시하기도 한다. 전체 선택자 *{} </li>
+                    <li> 클래스와 id 선택자 / 문서 안에서 여러번 반복할 스타일이면 class / 문서 안에서 한 번만 사용한다면 id 선택자 # 다음에 id 이름 지정</li>
+                    <li> 그룹으로 묶어서 지정하는 그룹 선택자도 있음. 태그, 태그{} </li>
+                    <li> 캐스캐이딩 스타일 시트( CSS ) : 위에서 아래로 흐른다의 의미로 우선순위 / 상속에 따라 위에서 아래로 전달됨.</li>
+                </ol>
+                <li>8주차</li>
+                <ol>
+                    <li>원칙 1: 스타일 우선 순위 / 원칙 2: 스타일 상속</li>
+                    <li>다른 브라우저를 위해 브라우저 접두사를 붙여 사용하기도 함</li>
+                    <li>텍스트 관련 스타일 : 직접 웹 폰트 업로드해서 사용하기 / font-size / font-weight / font-variant / </li>
+                    <li>font-style / font / color / text-decoration(none, underline, overline, line-through ) / text-transform (대소, 소대 전환)</li>
+                    <li>text-shadow 속성 / white-space 속성 ( 자간 )</li>
 
                 </ol>
-                <li>6주차 </li>
+                <li>9주차</li>
                 <ol>
-                    <li>내용 없음</li>
+                    <li>direction 속성 : 텍스트를 쓰는 방향 지정</li>
+                    <li>text-align / text-indent / line-height / text-overflow / list-style-type / list-style-image / list-style-position ( inside, outside ) </li>
+                    <li>list-style </li>
+
+                    <br>
+
+                    <li>background-color / background-clip / background-image / background-repeat / background-size / background-position </li>
+                    <li>background-origin / background-attachment </li>
+                    <li>background</li>
+
+                    <br>
+                    <li> 그라데이션 속성, 그라데이션 반복</li>
+                    <li> background: linear-gradient(to right bottom, blue, white)</li>
+
+                    <br>
+                    <li> CSS 박스 모델</li>
+                    <li> 블록 레벨 요소 - 요소를 삽입했을 때 혼자 한 줄을 차지하는 요소 div p </li>
+                    <li> 인라인 레벨 요소 - 화면에 표시되는 만큼만 영역을 차지하고 나머지 공간에는 다른 요소가 올 수 있음. img strong </li>
+                    
+                    <br>
+                    <li> 박스 모델 - 실제 콘텐츠 영역, 패딩, 박스의 테두리, 그리고 마진 등의 요소로 구성됨.</li>
+                    <li> width, height ( px 고정너비, % 화면에 따른 가변 너비 )</li>
+
+                    <li>display 속성 : none | contents | block | inline | inline-block | table | table-cell </li>
+                    <li>Border-style / Border-width / Border-color / Border-radius </li>
+                    <li>Box-shadow : 요소에 그림자 효과 내기</li>
+
+                    <li>Margin 속성 : 마진을 이용하면 요소 간의 간격 조절 가능</li>
+                    <li>1개라면 모두 / 2개라면 위아래 /  좌우 마진 값 3개라면 위 / 좌우 / 아래 / 4개 라면 위 / 오른 / 아래 / 왼 순으로 적용</li>
+                    <li>Padding 속성 : 콘텐츠 영역과 테두리 사이의 여백( 테두리 왼쪽 여백 )</li>
                 </ol>
-                <li>7주차 </li>
+                <li>10주차</li>
                 <ol>
-                    <li>내용 없음</li>
-                </ol>
-                <li>8주차 </li>
-                <ol>
-                    <li>내용 없음</li>
-                </ol>
-                <li>9주차 </li>
-                <ol>
-                    <li>내용 없음</li>
-                </ol>
-                <li>10주차 </li>
-                <ol>
-                    <li>내용 없음</li>
+                    <li>css 포지셔닝 : float 속성 / clear 속성 / position 속성(static, relative, absolute, fixed) / visibility 속성 / z-index 속성 요소 쌓는 순서 정하기</li>
                 </ol>
                 <li>11주차 </li>
                 <ol>
-                    <li>내용 없음</li>
+                    <li>문단 나누기 : column-width : 문단 너비 column-count 단의 개수 break-before, break-after 특정 요소의 앞이나 뒤에 다단 위치 지정 ( 단 새로시작 )</li>
+                    <li>column-span ( 여러 단을 하나로 합치기 )</li>
                 </ol>
                 <li>12주차 </li>
+                <ol>
+                    <li>내용 없음</li>
+                </ol>
+                <li>13주차 </li>
                 <ol>
                     <li>내용 없음</li>
                 </ol>
             </ul>
         </div>
         
+        <!------------------------제작자-------------------------->
         <div class="footer_context">
             <hr>
             <p class="made_by">Assginment by "WebProgramming" of Sejong University, Intelligent Mechatronics Of School<br>
