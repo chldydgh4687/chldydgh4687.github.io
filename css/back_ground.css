@@ -58,73 +58,26 @@ body{
 }
 /*---------------top_button------------*/
 #top_button {
-    z-index: -20;
+    display: scroll;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-}
-/*---------------project_button---------------*/
-#project_menu{
-    position:fixed; 
-    right:10%; 
-    top:10%;
-}
-input[id="menuicon"]{
-    display:none;
-}
-input[id="menuicon"] + label{
-    display:block;
-    width:40px;
-    height:30px;
-    position:relative;
-    cursor:pointer;
-}
-input[id="menuicon"] + label span {
-    display:block;
-    position:absolute;
-    width:100%;
-    height:3px;
-    border-radius:30px;
-    background: #000;
-    transition:all.35s;
-}
-input[id="menuicon"] + label span:nth-child(1){
-    top:0;
-}
-input[id="menuicon"] + label span:nth-child(2){
-    top:50%;
-    transform:translateY(-50%);
-}
-input[id="menuicon"] + label span:nth-child(3){
-    bottom:0;
-}
+    bottom: 5px;
+    right: 5px;
+} 
 
-input[id="menuicon"]:checked + label span:nth-child(1){
-    top:50%;
-    transform:translateY(-50%) rotate(45deg);
-}
-input[id="menuicon"]:checked + label span:nth-child(2){
-    opacity:0;
-}
-input[id="menuicon"]:checked + label span:nth-child(3){
-    bottom:50%;
-    transform:translateY(50%) rotate(-45deg);
-}
-
-div[class="sidebar"]{ 
-    width:300px; 
-    height:100%; 
-    background:lightgray; 
-    position:fixed; 
-    top:0; right:-300px; 
-    z-index:-1; 
-    transition:all .35s;
-}
-input[id="menuicon"]:checked + label + div {
-    right:0;
-}
 /*---------------mark_color-------------*/
 mark{
     background-color: lightpink;
 }
 
+.footer_context{
+    text-align:center;
+    margin-top: 80px;
+    margin-left: 200px;
+    margin-bottom: 80px;
+    width: 1500px;
+}
+
+.made_by{
+    font-size:15px;
+    color: darkgray;
+}
