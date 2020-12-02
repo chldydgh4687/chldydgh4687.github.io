@@ -1,0 +1,30 @@
+.profile{
+    margin-bottom: 20px;
+    width:1500px;
+}
+.profile img{
+    margin : 50px;
+}
+.profile ul{
+}
+
+
+.profile_text{
+    display : inline-block;
+    margin-top:20px;
+    margin-left: 10px;
+    line-height:2em;
+    width:630px;
+}
+ul #pic1{
+    list-style-image: url("../images/list_bullet/fire.PNG");
+}
+ul #pic2{
+    list-style-image: url("../images/list_bullet/edu.PNG");
+}
+ul #pic3{
+    list-style-image: url("../images/list_bullet/Skills.PNG");
+}
+ul #pic4{
+    list-style-image: url("../images/list_bullet/interest.PNG");
+}
