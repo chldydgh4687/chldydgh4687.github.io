@@ -15,9 +15,15 @@
     width:850px;
     float:left;
 }
+.site_intro figcaption{
+    text-align:center;
+    margin: 10px;
+    
+}
+
 .site_intro_pic{
     float:left;
-    margin-top:30px;
+    margin-top:10px;
     margin-bottom: 30px;
 }
 .site_intro_text{

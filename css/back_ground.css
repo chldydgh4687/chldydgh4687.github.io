@@ -75,9 +75,15 @@ mark{
     margin-left: 200px;
     margin-bottom: 80px;
     width: 1500px;
-}
-
-.made_by{
     font-size:15px;
     color: darkgray;
+}
+
+table {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+table td, table th {
+    border: 1px solid darkgray;
 }
