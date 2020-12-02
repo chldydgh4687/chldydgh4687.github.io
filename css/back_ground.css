@@ -7,17 +7,17 @@ body{
 }
 
 /*-----------logo------------*/
-.logo-wrap {
+#logo-wrap {
     width: 700px;
     margin-left:20px;
     margin-top: 15px;
     position: relative;
 }
-.logo-wrap img {
+#logo-wrap img {
     /*img size adjusting in wrap tag*/
     width: 70%;
 }
-.logo-text {
+#logo-text {
     font-family: "Microsoft YaHei UI Light",Trebuchet MS, Dotum, Arial; 
     text-align: left;
     position: absolute;
@@ -52,3 +52,14 @@ body{
 #topMenu .menuLink:hover {           
     color: gray;                   
 } 
+/*---------------top_buttn------------*/
+#top_button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+/*---------------mark_color-------------*/
+mark{
+    background-color: lightpink;
+}
