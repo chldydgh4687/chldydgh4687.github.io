@@ -8,7 +8,7 @@
                 border: 1px solid #000000;
             }   
         </style>
-        <!-----------------------------------background / menu / logo----------------------------->
+        <!-----------------------------------background / menu / logo / top_button ----------------------------->
         <link rel="stylesheet" href="css/back_ground.css">
         <!-----------------------------------context----------------------------->
         <link rel="stylesheet" href="css/context.css">
@@ -17,13 +17,13 @@
     </head>
     <body>
         <!------------------------logo-------------------------->
-        <div class="logo-wrap">
+        <div id="logo-wrap">
             <img src="./images/logo.png" alt="" usemap="#github">
             <map name="github">
                 <area shape="rect" coords="455,55,475,75"
                 href="https://github.com/chldydgh4687" target="_blank" alt="github.com/chldydgh4687">
             </map>
-			<div class="logo-text">
+			<div id="logo-text">
                 <h1 style="font-size:2em">chldydgh4687<br>
                     <span style="font-size:15px">VideoCompression & ImageRestoration</span>
                 </h1>
@@ -36,7 +36,15 @@
                 </ul>
             </nav>
         </div>
-        
+        <!-------------------------TOP_BUTTON------------------------->
+        <div id="top_button">
+            <a href="#logo-wrap"><img src="./images/top_button.jpg" title="위로 가기"></a>
+        </div>
+
+
+
+
+
         <!------------------------소개글-------------------------->
         <div class="text_config site_intro">
             <h1><strong>웹 프로그래밍 '홈페이지 작성' - '프로필 홈페이지'</strong></h1>
@@ -51,7 +59,7 @@
         </div>
 
         <div class="site_intro_text" style="float:left;">
-            <pre style="font-size:20px"><strong>본 과제에서 저는 '깃허브 프로필 홈페이지' 제작을 진행해보았습니다.</strong></pre>
+            <pre style="font-size:20px"><strong>본 과제에서 저는 <mark>'깃허브 프로필 홈페이지'</mark> 제작을 진행해보았습니다.</strong></pre>
             <ul>
                 <li>제작 기간 : <input type="text" size="10" value="11 / 30 ~ 12 / 5" readonly> </li>
                 <li>+ a 기능 : Activity 메뉴 / gitpages 런칭 및 'Develop' 브런치 관리 / Top 버튼 제작 </li>
@@ -61,54 +69,48 @@
 
             <pre style="font-size:20px; margin-top:50px;"><strong>홈페이지 구성</strong></pre>
             <ul>
+                <li>Main : 홈페이지 기능 소개(현재 페이지) </li>
+                <li>Introduction : 자신에 대한 소개글 및 가치관, 신념 </li>
+                <li>Activity : 현재까지의 이력 및 깃허브 활동 </li>
+            </ul> 
+
+            <pre style="font-size:20px; margin-top:50px;"><strong>홈페이지 기능</strong></pre>
+            <ul>
                 <li>Main : 홈페이지 기능 소개 </li>
                 <li>Introduction : 소개글 및 가치관, 신념 </li>
                 <li>Activity : 이력 및 깃허브 활동 </li>
-            </ul> 
+            </ul>
+
+            <pre style="font-size:20px; margin-top:50px;"><strong>코드 편집 환경</strong></pre>
+            <ul>
+                <li>Visual Studio Code / Gitkraken</li>
+            </ul>
         </div>
             
-        <!-- <div class=".site_intro_pic site_intro_text box_check">
-            <pre style="font-size:20px"><strong>본 과제에서 저는 '깃허브 프로필 홈페이지' 제작을 진행해보았습니다.</strong></pre>
-            <ul>
-                <li>제작 기간 : <input type="text" size="10" value="11 / 30 ~ 12 / 5" readonly> </li>
-                <li>+ a 기능 : Activity 메뉴 / gitpages 런칭 및 'Develop' 브런치 관리 / Top 버튼 제작 </li>
-                <li>홈페이지 주소 : <a href="https://chldydgh4687.github.io">https://chldydgh4687.github.io</a>
-                <li>깃 레포지토리 : <a href="https://github.com/chldydgh4687/chldydgh4687.github.io" target="_blank">[Git repository]</a></li>
-            </ul>
-            
-
-            <pre style="font-size:20px; margin-top:50px;"><strong>홈페이지 구성</strong></pre>
-            <ul>
-                <li>Main : 홈페이지 기능 소개 </li>
-                <li>Introduction : 소개글 및 가치관, 신념 </li>
-                <li>Activity : 이력 및 깃허브 활동 </li>
-            </ul>
-            
-        </div> -->
         <!------------------------과제리스트-------------------------->
         <div class="checklist_ text_config">
             <h1><strong>웹 프로그래밍 '홈페이지 작성' 과제 체크리스트</strong></h1>
             <hr>
-            <p>형광펜은 쓰인 부분을 의미합니다. ( 개념 제외 )</p>
+            <p>line-through 는 홈페이지에서 사용한 부분을 의미합니다. ( 개념 제외 )</p>
             <ul>
-                <li>1주차(개념) </li>
-                <ol>
+                <li >1주차(개념) </li>
+                <ol style="text-decoration:line-through;">
                     <li>Html 무엇인가</li>
                     <li>웹 표준이란 무엇인가</li>
                     <li>웹 표준을 사용하는 이유</li>
                     <li>HTML5와 CSS3를 공부해야하는 이유</li>
                 </ol>
                 <li>2주차 </li>
-                <ol>
+                <ol style="text-decoration:line-through;">
                     <li>html / head / body 태그</li>
                     <li>hn / br / p / hr 태그</li>
                     <li>blockquote 인용문 넣기 / pre 입력한 그대로 표시</li>
                 </ol>
                 <li>3주차 </li>
                 <ol>
-                    <li>storng 굵게 표시 / b 태그를 잘 안쓰는 이유 / em 이탤릭체 / q 인용표시 ""로 표기 / mark 형광펜</li>
-                    <li>span 줄 안에서 묶기 /  div 단락으로 묶기</li>
-                    <li>ul 순서없는 목록 대괄호 태그 / ol 순서있는 목록 대괄호 태그 / li 리스트 태그</li>
+                    <li style="text-decoration:line-through;">storng 굵게 표시 / b 태그를 잘 안쓰는 이유 / em 이탤릭체 / q 인용표시 ""로 표기 / mark 형광펜</li>
+                    <li style="text-decoration:line-through;">span 줄 안에서 묶기 /  div 단락으로 묶기</li>
+                    <li style="text-decoration:line-through;">ul 순서없는 목록 대괄호 태그 / ol 순서있는 목록 대괄호 태그 / li 리스트 태그</li>
                     <li>dl 목록 대괄호 dt 줄목록 dd 줄글목록</li>
                 </ol>
                 <li>4주차 </li>
@@ -124,43 +126,43 @@
                     <li>figure figcaption : 이미지에 설명글 붙이기 (figure 안에 img 태그하고 img 위 figcaption img 아래 figcaption이 다름)</li>
                 </ol>
                 <li>5주차</li>
-                <ol>
+                <ol style="text-decoration:line-through;">
                     <li>a 하이퍼링크태그 - target 속성 : 링크를 새 탭에서 열기</li>
                     <li>한 페이지 안에서 점프하기 - 앵커 id와 #을 이용하여 표현</li>
                     <li>area 태그, usemap 속성( 사용자가 웹 사이트로 정보를 보낼 수 있는 요소 : 폼 )</li>
                 </ol>
                 <li>6주차</li>
                 <ol>
-                    <li>input 태그 / type / user-name / size </li>
+                    <li style="text-decoration:line-through;">input 태그 / type / user-name / size </li>
                 </ol>
                 <li>7주차</li>
                 <ol>
                     <li> input에 대한 다양한 폼 / CSS 기초 버튼 /  퍼센트 그래프 표현 </li>
-                    <li> 내부 스타일 : 모든 스타일 정보는 head 안에 정의 style 사이에 작성 </li>
-                    <li> 외부 스타일 : css 파일로 저장하여 link태그를 이용하여 사용, style.css / link rel="stylesheet" href="css/style.css" </li>
-                    <li> 직접적으로 인라인으로 표시하기도 한다. 전체 선택자 *{} </li>
-                    <li> 클래스와 id 선택자 / 문서 안에서 여러번 반복할 스타일이면 class / 문서 안에서 한 번만 사용한다면 id 선택자 # 다음에 id 이름 지정</li>
-                    <li> 그룹으로 묶어서 지정하는 그룹 선택자도 있음. 태그, 태그{} </li>
+                    <li style="text-decoration:line-through;"> 내부 스타일 : 모든 스타일 정보는 head 안에 정의 style 사이에 작성 </li>
+                    <li style="text-decoration:line-through;"> 외부 스타일 : css 파일로 저장하여 link태그를 이용하여 사용, style.css / link rel="stylesheet" href="css/style.css" </li>
+                    <li style="text-decoration:line-through;"> 직접적으로 인라인으로 표시하기도 한다. 전체 선택자 *{} </li>
+                    <li style="text-decoration:line-through;"> 클래스와 id 선택자 / 문서 안에서 여러번 반복할 스타일이면 class / 문서 안에서 한 번만 사용한다면 id 선택자 # 다음에 id 이름 지정</li>
+                    <li style="text-decoration:line-through;"> 그룹으로 묶어서 지정하는 그룹 선택자도 있음. 태그, 태그{} </li>
                     <li> 캐스캐이딩 스타일 시트( CSS ) : 위에서 아래로 흐른다의 의미로 우선순위 / 상속에 따라 위에서 아래로 전달됨.</li>
                 </ol>
                 <li>8주차</li>
                 <ol>
                     <li>원칙 1: 스타일 우선 순위 / 원칙 2: 스타일 상속</li>
                     <li>다른 브라우저를 위해 브라우저 접두사를 붙여 사용하기도 함</li>
-                    <li>텍스트 관련 스타일 : 직접 웹 폰트 업로드해서 사용하기 / font-size / font-weight / font-variant / </li>
-                    <li>font-style / font / color / text-decoration(none, underline, overline, line-through ) / text-transform (대소, 소대 전환)</li>
+                    <li style="text-decoration:line-through;">텍스트 관련 스타일 : 직접 웹 폰트 업로드해서 사용하기 / font-size / font-weight / font-variant / </li>
+                    <li style="text-decoration:line-through;">font-style / font / color / text-decoration(none, underline, overline, line-through ) / text-transform (대소, 소대 전환)</li>
                     <li>text-shadow 속성 / white-space 속성 ( 자간 )</li>
 
                 </ol>
                 <li>9주차</li>
                 <ol>
                     <li>direction 속성 : 텍스트를 쓰는 방향 지정</li>
-                    <li>text-align / text-indent / line-height / text-overflow / list-style-type / list-style-image / list-style-position ( inside, outside ) </li>
-                    <li>list-style </li>
+                    <li style="text-decoration:line-through;">text-align / text-indent / line-height / text-overflow / list-style-type </li>
+                    <li style="text-decoration:line-through;">list-style-image / list-style-position ( inside, outside ) </li>
 
                     <br>
 
-                    <li>background-color / background-clip / background-image / background-repeat / background-size / background-position </li>
+                    <li style="text-decoration:line-through;">background-color / background-clip / background-image / background-repeat / background-size / background-position </li>
                     <li>background-origin / background-attachment </li>
                     <li>background</li>
 
@@ -169,25 +171,24 @@
                     <li> background: linear-gradient(to right bottom, blue, white)</li>
 
                     <br>
-                    <li> CSS 박스 모델</li>
-                    <li> 블록 레벨 요소 - 요소를 삽입했을 때 혼자 한 줄을 차지하는 요소 div p </li>
-                    <li> 인라인 레벨 요소 - 화면에 표시되는 만큼만 영역을 차지하고 나머지 공간에는 다른 요소가 올 수 있음. img strong </li>
+                   
+                    <li style="text-decoration:line-through;"> (CSS 박스 모델) 블록 레벨 요소 - 요소를 삽입했을 때 혼자 한 줄을 차지하는 요소 div p </li>
+                    <li style="text-decoration:line-through;"> (CSS 박스 모델) 인라인 레벨 요소 - 화면에 표시되는 만큼만 영역을 차지하고 나머지 공간에는 다른 요소가 올 수 있음. img strong </li>
                     
                     <br>
-                    <li> 박스 모델 - 실제 콘텐츠 영역, 패딩, 박스의 테두리, 그리고 마진 등의 요소로 구성됨.</li>
-                    <li> width, height ( px 고정너비, % 화면에 따른 가변 너비 )</li>
+                    <li style="text-decoration:line-through;"> 박스 모델 - 실제 콘텐츠 영역, 패딩, 박스의 테두리, 그리고 마진 등의 요소로 구성됨.</li>
+                    <li style="text-decoration:line-through;"> width, height ( px 고정너비, % 화면에 따른 가변 너비 )</li>
 
-                    <li>display 속성 : none | contents | block | inline | inline-block | table | table-cell </li>
-                    <li>Border-style / Border-width / Border-color / Border-radius </li>
+                    <li style="text-decoration:line-through;">display 속성 : none | contents | block | inline | inline-block | table | table-cell </li>
+                    <li style="text-decoration:line-through;">Border-style / Border-width / Border-color / Border-radius </li>
                     <li>Box-shadow : 요소에 그림자 효과 내기</li>
 
-                    <li>Margin 속성 : 마진을 이용하면 요소 간의 간격 조절 가능</li>
-                    <li>1개라면 모두 / 2개라면 위아래 /  좌우 마진 값 3개라면 위 / 좌우 / 아래 / 4개 라면 위 / 오른 / 아래 / 왼 순으로 적용</li>
-                    <li>Padding 속성 : 콘텐츠 영역과 테두리 사이의 여백( 테두리 왼쪽 여백 )</li>
+                    <li style="text-decoration:line-through;">Margin 속성 : 마진을 이용하면 요소 간의 간격 조절 가능 1개라면 모두 / 2개라면 위아래 /  좌우 마진 값 3개라면 위 / 좌우 / 아래 / 4개 라면 위 / 오른 / 아래 / 왼 순으로 적용</li>
+                    <li style="text-decoration:line-through;">Padding 속성 : 콘텐츠 영역과 테두리 사이의 여백( 테두리 왼쪽 여백 )</li>
                 </ol>
                 <li>10주차</li>
                 <ol>
-                    <li>css 포지셔닝 : float 속성 / clear 속성 / position 속성(static, relative, absolute, fixed) / visibility 속성 / z-index 속성 요소 쌓는 순서 정하기</li>
+                    <li style="text-decoration:line-through;">css 포지셔닝 : float 속성 / clear 속성 / position 속성(static, relative, absolute, fixed) / visibility 속성 / z-index 속성 요소 쌓는 순서 정하기</li>
                 </ol>
                 <li>11주차 </li>
                 <ol>
@@ -204,7 +205,6 @@
                 </ol>
             </ul>
         </div>
-        
         <!------------------------제작자-------------------------->
         <div class="footer_context">
             <hr>
