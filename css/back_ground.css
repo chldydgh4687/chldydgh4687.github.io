@@ -58,11 +58,11 @@ body{
 }
 /*---------------top_button------------*/
 #top_button {
-    z-index: -20;
+    display: scroll;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-}
+    bottom: 5px;
+    right: 5px;
+} 
 /*---------------project_button---------------*/
 #project_menu{
     position:fixed; 
