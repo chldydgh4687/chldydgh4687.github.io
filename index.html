@@ -8,16 +8,37 @@
                 border: 1px solid #000000;
             }   
         </style>
-        <!-----------------------------------background / menu / logo / top_button ----------------------------->
-        <link rel="stylesheet" href="css/back_ground.css">
+        <!-----------------------------------background / menu / logo----------------------------->
+        <link rel="stylesheet" href="../css/back_ground.css">
         <!-----------------------------------context----------------------------->
-        <link rel="stylesheet" href="css/context.css">
+        <link rel="stylesheet" href="../css/context.css">
+        <!-----------------------------------act----------------------------->
+        <link rel="stylesheet" href="../css/act_style.css">
     </head>
     <body>
-        <header>
+        <!-------------------------PROJECT_BUTTON------------------------->
+        </header>
+            <div id="project_menu">
+                <input type="checkbox" id="menuicon">
+                <label for="menuicon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="sidebar">
+                    <div class="sidebar_list">
+                        <h3 style="text-align: center;">Git Repository</h3>
+                        <dl>
+                            <dd><a href="https://github.com/chldydgh4687/2020-2.simple_DCSCN" target="_blank">2020-2.simple_DCSCN</a></dd>
+                            <dd><a href="https://github.com/chldydgh4687/2020-1.Creative.VideoCaptioning" target="_blank">2020-1.Creative.VideoCaptioning</a></dd>
+                        </dl>                        
+                    </div>
+                </div>
+            </div>
+
             <!------------------------logo-------------------------->
             <div id="logo-wrap">
-                <a href="./index.html"><img src="./images/logo.png" alt="" usemap="#github"></a>
+                <a href="../index.html"><img src="../images/logo.png" alt="" usemap="#github" style="z-index:1;"></a>
                 <map name="github">
                     <area shape="rect" coords="455,55,475,75"
                     href="https://github.com/chldydgh4687" target="_blank" alt="github.com/chldydgh4687">
@@ -27,219 +48,38 @@
                         <span style="font-size:15px">VideoCompression & ImageRestoration</span>
                     </h1>
                 </div>
+
                 <nav id="topMenu">
                     <ul>
                         <li><a class="menuLink" href="https://sites.google.com/view/ivcl" target="_blank">IVCL.Lab</a></li>
-                        <li><a class="menuLink" href="./layouts/Activity.html">Activity</a></li>
-                        <li><a class="menuLink" href="./layouts/Introduction.html">Introduction</a></li>
-                        <li><a class="menuLink" href="./index.html">Main</a></li>
+                        <li><a class="menuLink" href="../layouts/Activity.html">Activity</a></li>
+                        <li><a class="menuLink" href="../layouts/Introduction.html">Introduction</a></li>
+                        <li><a class="menuLink" href="../index.html">Main</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-        
+
+
         <section>
-            <!------------------------소개글-------------------------->
-            <div style="width:1800px;">
-                <div class="text_config site_intro">
-                    <h1><strong>웹 프로그래밍 '홈페이지 작성' - '프로필 홈페이지'</strong></h1>
-                    <hr style = "width:1500px;">
-                    <div class=" site_intro_pic" style="margin-right: 20px;">
-                        <fig>
-                            <figcaption><strong>Introduction</strong></figcaption>
-                            <img src = "./images/profile_ex.PNG" width = 400px; height = 250px; border="1";>
-                        </fig>
-                    </div>
-                    <div class=" site_intro_pic" style="margin-right: 20px;">
-                        <fig>
-                            <figcaption><strong>Activity</strong></figcaption>
-                            <img src = "./images/profile_ex1.PNG" width = 400px; height = 250px; border="1";>
-                        </fig>
-                    </div>
-                    <fig>
-                        <figcaption><strong>Gitpage Repository</strong></figcaption>
-                        <img src = "./images/github.PNG" width = 820px; height = 700px; border="1" style="margin-bottom:50px;";>
-                    </fig>
-                </div>
+            <div class="text_config checklist_" style="height:390px;">
+                <h1>Activity</h1><hr>
+               
+                <h3>Versatile Video Coding (VVC) Standard</h3>
+                <li> Simple_DCSCN in <a href="http://phenix.it-sudparis.eu/jvet/doc_end_user/documents/20_Teleconference/wg11/JVET-T0096-v3.zip" download>
+                    [AHG11: Deep Neural Network for Super-Resolution, JVET-T0096, Oct. 2020 (Teleconference), J. Y. Lee, Y. Choi (Sejong University), W. Lim, G. Bang (ETRI)]</a> (B.S.)</li>
+                
+                <br>
 
-                <div class="site_intro_text" style="display:inline-block;">
-                    <pre style="font-size:20px"><strong>본 과제에서 <mark>'깃허브 프로필 홈페이지'</mark> 제작을 진행해보았습니다.</strong></pre>
-                    <ul>
-                        <li>제작 기간 : <input type="text" size="10" value="11 / 22 ~ 12 / 3" readonly> </li>
-                        <li>홈페이지 주소 : <a href="https://chldydgh4687.github.io">https://chldydgh4687.github.io</a>
-                        <li>깃 레포지토리 : <a href="https://github.com/chldydgh4687/chldydgh4687.github.io" target="_blank">[Git repository]</a></li>
-                        <li style="text-decoration:underline;">본 홈페이지는 PC환경에 최적화되어있습니다.</li>
-                    </ul>
-
-                    <pre style="font-size:20px; margin-top:50px;"><strong>홈페이지 구성</strong></pre>
-                    <ul>
-                        <li>Main : 홈페이지 기능 소개(현재 페이지) </li>
-                        <li>Introduction : 자기 소개 </li>
-                        <li>Activity : 현재까지의 이력 및 깃허브 활동 </li>
-                    </ul> 
-
-                    <pre style="font-size:20px; margin-top:50px;"><strong>HTML / CSS 구성</strong></pre>
-                    <ul>
-                        <li>index.html : 홈페이지 기능 소개(현재 페이지) </li>
-                        <li>layouts(folder) : 다른 페이지들</li>
-                            <ul>
-                                <li>Activity.html : 이력 및 활동 페이지</li>
-                                <li>Introduction.html : 자기소개 페이지</li>
-                            </ul>
-                        <li>images(folder) : 필요한 이미지</li>
-                        <li>css(folder) : 스타일시트풀더 </li>
-                            <ul>
-                                <li>back_ground.css / context.css : 공통(배경), 메인페이지 스타일시트 </li>
-                                <li>intro_style.css : 자기소개 스타일시트 </li>
-                                <li>act_style.css : 이력 및 활동 스타일시트 </li>
-                            </ul>
-                    </ul>
-
-                    <pre style="font-size:20px; margin-top:50px;"><strong>응용 기능 및 숨겨진 기능</strong></pre>
-                    <ul>
-                        <li>메인페이지 와 자기소개 페이지의 top_button</li>
-                        <li>이력 및 활동 페이지의 sidebar</li>
-                        <li>왼쪽 상단의 깃허브 마크를 누르면 깃허브(새 창)로 이동</li>
-                    </ul>
-
-                    <pre style="font-size:20px; margin-top:50px;"><strong>코드 편집 환경</strong></pre>
-                    <ul>
-                        <li>Visual Studio Code / Gitkraken</li>
-                    </ul>
-                </div>
+                <h3>Deep Leanring</h3>
+                <li>Improvement of Video Captioning Network Performance for Low Video Quality, 2020-1. SEJONG.UNIV_창의학기제</li>
+                
+                
             </div>
-            <!------------------------과제리스트-------------------------->
-            <div class="checklist_ text_config">
-                <h1><strong>웹 프로그래밍 '홈페이지 작성' 과제 체크리스트</strong></h1>
-                <hr>
-                <p>line-through 는 홈페이지에서 사용한 부분을 의미합니다. ( 개념 제외 )</p>
-                <ul>
-                    <li >1주차(개념) </li>
-                    <ol style="text-decoration:line-through;">
-                        <li>Html 무엇인가</li>
-                        <li>웹 표준이란 무엇인가</li>
-                        <li>웹 표준을 사용하는 이유</li>
-                        <li>HTML5와 CSS3를 공부해야하는 이유</li>
-                    </ol>
-                    <li>2주차 </li>
-                    <ol style="text-decoration:line-through;">
-                        <li>html / head / body 태그</li>
-                        <li>hn / br / p / hr 태그</li>
-                        <li>blockquote 인용문 넣기 / pre 입력한 그대로 표시</li>
-                    </ol>
-                    <li>3주차 </li>
-                    <ol>
-                        <li style="text-decoration:line-through;">storng 굵게 표시 / b 태그를 잘 안쓰는 이유 / em 이탤릭체 / q 인용표시 ""로 표기 / mark 형광펜</li>
-                        <li style="text-decoration:line-through;">span 줄 안에서 묶기 /  div 단락으로 묶기</li>
-                        <li style="text-decoration:line-through;">ul 순서없는 목록 대괄호 태그 / ol 순서있는 목록 대괄호 태그 / li 리스트 태그</li>
-                        <li style="text-decoration:line-through;">dl 목록 대괄호 dt 줄목록 dd 줄글목록</li>
-                    </ol>
-                    <li>4주차 </li>
-                    <ol>
-                        <li style="text-decoration:line-through;">table 테이블 태그</li>
-                        <li style="text-decoration:line-through;">tr ~ /tr : 행 td ~ /td : 셀, th ~ /th 제목 셀</li>
-                        <li>colspan, rowspan : 행 또는 열 합치기, 몇 칸할 것인지 정해줌</li>
-                        <li>colgroup ~ /colgroup : 열의 스타일 표시</li>
-
-                        <li>figcaption : 표 제목 (속성 위치에 따라 표의 위나 아래에 제목 표시) </li>
-                        <li>thead / tbody / tfoot : 표 구조 정의하기</li>
-                        <li style="text-decoration:line-through;">img 이미지 태그 / src 경로 속성 / width, height : 이미지크기 조정 속성</li>
-                        <li style="text-decoration:line-through;">figure figcaption : 이미지에 설명글 붙이기 (figure 안에 img 태그하고 img 위 figcaption img 아래 figcaption이 다름)</li>
-                    </ol>
-                    <li>5주차</li>
-                    <ol style="text-decoration:line-through;">
-                        <li>a 하이퍼링크태그 - target 속성 : 링크를 새 탭에서 열기</li>
-                        <li>한 페이지 안에서 점프하기 - 앵커 id와 #을 이용하여 표현</li>
-                        <li>area 태그, usemap 속성( 사용자가 웹 사이트로 정보를 보낼 수 있는 요소 : 폼 )</li>
-                    </ol>
-                    <li>6주차</li>
-                    <ol>
-                        <li style="text-decoration:line-through;">input 태그 / type / user-name / size </li>
-                    </ol>
-                    <li>7주차</li>
-                    <ol>
-                        <li> input에 대한 다양한 폼 / CSS 기초 버튼 /  퍼센트 그래프 표현 </li>
-                        <li style="text-decoration:line-through;"> 내부 스타일 : 모든 스타일 정보는 head 안에 정의 style 사이에 작성 </li>
-                        <li style="text-decoration:line-through;"> 외부 스타일 : css 파일로 저장하여 link태그를 이용하여 사용, style.css / link rel="stylesheet" href="css/style.css" </li>
-                        <li style="text-decoration:line-through;"> 직접적으로 인라인으로 표시하기도 한다. 전체 선택자 *{} </li>
-                        <li style="text-decoration:line-through;"> 클래스와 id 선택자 / 문서 안에서 여러번 반복할 스타일이면 class / 문서 안에서 한 번만 사용한다면 id 선택자 # 다음에 id 이름 지정</li>
-                        <li style="text-decoration:line-through;"> 그룹으로 묶어서 지정하는 그룹 선택자도 있음. 태그, 태그{} </li>
-                        <li> 캐스캐이딩 스타일 시트( CSS ) : 위에서 아래로 흐른다의 의미로 우선순위 / 상속에 따라 위에서 아래로 전달됨.</li>
-                    </ol>
-                    <li>8주차</li>
-                    <ol>
-                        <li style="text-decoration:line-through;">원칙 1: 스타일 우선 순위 / 원칙 2: 스타일 상속</li>
-                        <li style="text-decoration:line-through;">다른 브라우저를 위해 브라우저 접두사를 붙여 사용하기도 함</li>
-                        <li style="text-decoration:line-through;">텍스트 관련 스타일 : 직접 웹 폰트 업로드해서 사용하기 / font-size / font-weight / font-variant / </li>
-                        <li style="text-decoration:line-through;">font-style / font / color / text-decoration(none, underline, overline, line-through ) / text-transform (대소, 소대 전환)</li>
-                        <li>text-shadow 속성 / white-space 속성 ( 자간 )</li>
-
-                    </ol>
-                    <li>9주차</li>
-                    <ol>
-                        <li>direction 속성 : 텍스트를 쓰는 방향 지정</li>
-                        <li style="text-decoration:line-through;">text-align / text-indent / line-height / text-overflow / list-style-type </li>
-                        <li style="text-decoration:line-through;">list-style-image / list-style-position ( inside, outside ) </li>
-
-                        <br>
-
-                        <li style="text-decoration:line-through;">background-color / background-clip / background-image / background-repeat / background-size / background-position </li>
-                        <li>background-origin / background-attachment </li>
-                        <li>background</li>
-
-                        <br>
-                        <li> 그라데이션 속성, 그라데이션 반복</li>
-                        <li> background: linear-gradient(to right bottom, blue, white)</li>
-
-                        <br>
-                    
-                        <li style="text-decoration:line-through;"> (CSS 박스 모델) 블록 레벨 요소 - 요소를 삽입했을 때 혼자 한 줄을 차지하는 요소 div p </li>
-                        <li style="text-decoration:line-through;"> (CSS 박스 모델) 인라인 레벨 요소 - 화면에 표시되는 만큼만 영역을 차지하고 나머지 공간에는 다른 요소가 올 수 있음. img strong </li>
-                        
-                        <br>
-                        <li style="text-decoration:line-through;"> 박스 모델 - 실제 콘텐츠 영역, 패딩, 박스의 테두리, 그리고 마진 등의 요소로 구성됨.</li>
-                        <li style="text-decoration:line-through;"> width, height ( px 고정너비, % 화면에 따른 가변 너비 )</li>
-
-                        <li style="text-decoration:line-through;">display 속성 : none | contents | block | inline | inline-block | table | table-cell </li>
-                        <li style="text-decoration:line-through;">Border-style / Border-width / Border-color / Border-radius </li>
-                        <li>Box-shadow : 요소에 그림자 효과 내기</li>
-
-                        <li style="text-decoration:line-through;">Margin 속성 : 마진을 이용하면 요소 간의 간격 조절 가능 1개라면 모두 / 2개라면 위아래 /  좌우 마진 값 3개라면 위 / 좌우 / 아래 / 4개 라면 위 / 오른 / 아래 / 왼 순으로 적용</li>
-                        <li style="text-decoration:line-through;">Padding 속성 : 콘텐츠 영역과 테두리 사이의 여백( 테두리 왼쪽 여백 )</li>
-                    </ol>
-                    <li>10주차</li>
-                    <ol>
-                        <li style="text-decoration:line-through;">css 포지셔닝 : float 속성 / clear 속성 / position 속성(static, relative, absolute, fixed) / visibility 속성 / z-index 속성 요소 쌓는 순서 정하기</li>
-                    </ol>
-                    <li>11주차 </li>
-                    <ol>
-                        <li>문단 나누기 : column-width : 문단 너비 column-count 단의 개수 break-before, break-after 특정 요소의 앞이나 뒤에 다단 위치 지정 ( 단 새로시작 )</li>
-                        <li>column-span ( 여러 단을 하나로 합치기 )</li>
-                    </ol>
-                    <li>12주차 </li>
-                    <ol>
-                        <li>iframe / HTML5 비디오와 음악처리 </li>
-                        <li style="text-decoration:line-through;">다양한 선택자 개념 / 하위 선택자 / 자식 선택자 / 인접 형제 선택자 / 형제 선택자 / 속성 선택자 / 속성값 선택자 / 속성 ~= 값 넡개자 / 속성 |= 값 선택자</li>
-                    </ol>
-                    <li>13주차 </li>
-                    <ol>
-                        <li>또 다른 선택자들 / [속성 ^= 값] 선택자 / [속성 $= 값] 선택자 / [속성 *= 값]</li>
-                        <li style="text-decoration:line-through;">가상 클래스와 가상 요소 ( :link / :visited / :hover / :focus )</li>
-                        <li style="text-decoration:line-through;">(:enabled, :disabled, :checked ...</li>
-                        <li>(:first-child :last-child ::first-line ::first-letter ::before ::after)</li>
-                        <br>
-                        <li style="text-decoration:line-through;">translate / scale / rotate / skew / transform-origin / perspective 속성 / backface-visibility / transition  </li>
-                    </ol>
-                     <li>14주차</li>
-                    <ul>
-                        <li style="text-decoration:line-through;">애니메이션 / 가변 이미지 / 가면 비디오</li>
-                        <li>미디어 쿼리</li>
-                    </ul>
-
-                </ul>
-            </div>
+            <p style="font-family: HY중고딕; margin-left:200px; margin-top:0; margin-bottom: 0;">If you want to know more detail, please press right-top sidebar button!! : ) </p>
         </section>
-        
+
+
         <footer>
             <!------------------------제작자-------------------------->
             <div class="footer_context">
@@ -259,10 +99,6 @@
                     @ Designed by Yongho_Choi</p>
             </div>
         </footer>
-
-         <!-------------------------TOP_BUTTON------------------------->
-        <div id="top_button">
-            <a href="#logo-wrap"><img src="./images/top_button.jpg" title="위로 가기"></a>
-        </div>
     </body>
 </html>
+
